@@ -1,10 +1,10 @@
-import React, { useCallback, useEffect, useRef, useState,useContext } from "react";
+import React, { useCallback, useEffect, useRef, useState, useContext } from "react";
 import TimerSpan from "../../components/TypingProject/timer/TimerSpan";
 import Footer from "../../components/TypingProject/Footer/Footer";
 import TypingStatistics from "../../components/TypingProject/Statistics/TypingStatistics";
 import { getData, calculateWpm, calculateAccuracy, handleOnChangeInput } from "../../components/TypingProject/Functions/functions";
 import CursorCarrotComp from "../../components/TypingProject/CursorCarotComp/CursorCarotComp";
-import {ActiveWordWithIndex, Data, Statistics} from "../../components/TypingProject/Types/types";
+import { ActiveWordWithIndex, Data, Statistics } from "../../components/TypingProject/Types/types";
 import AppContext from "../../components/AppContextFolder/AppContext";
 
 
@@ -24,7 +24,7 @@ export default function Home() {
   const seconds = useRef<number>(timeToType); // this useRef will hold the remaining seconds to type
   const timerCountingInterval = useRef(); // this useRef will hold the interval that is used in TimerSpan Component
   const [statistics, setStatistics] = useState<Statistics>([]); // this state will hold the statistics after user finish typing
-  const [isStartedTyping,seIsStartedTyping] = useState<boolean>(false); // this state will hold if user started typing
+  const [isStartedTyping, seIsStartedTyping] = useState<boolean>(false); // this state will hold if user started typing
   const context = useContext(AppContext);
 
   //  this restart will be assigned again in each render only when roundCounter increase
@@ -119,19 +119,19 @@ export default function Home() {
 
   // useEffect to clear EventListener of others projects
   useEffect(() => {
-  // remove the interval Cookie timer setter when
-  if (typeof window !== "undefined") {
-    // remove the interval cookie timer setter of UserDataPuller
-    clearInterval(context.sharedState.userdata.timerCookieRef.current);
-    // remove UserDataPuller project EventListeners
-    window.removeEventListener("resize", context.sharedState.userdata.windowSizeTracker.current);
-    window.removeEventListener("mousemove", context.sharedState.userdata.mousePositionTracker.current, false);
-    // remove Portfolio project NavBar EventListeners
-    window.removeEventListener("scroll", context.sharedState.portfolio.NavBar.IntervalEvent);
-    context.sharedState.portfolio.NavBar.IntervalEvent = null;
-    context.sharedState.portfolio.NavBar.scrolling = null;
-    context.sharedState.portfolio.NavBar.scrollSizeY = null;
-  }
+    // remove the interval Cookie timer setter when
+    if (typeof window !== "undefined") {
+      // remove the interval cookie timer setter of UserDataPuller
+      clearInterval(context.sharedState.userdata.timerCookieRef.current);
+      // remove UserDataPuller project EventListeners
+      window.removeEventListener("resize", context.sharedState.userdata.windowSizeTracker.current);
+      window.removeEventListener("mousemove", context.sharedState.userdata.mousePositionTracker.current, false);
+      // remove Portfolio project NavBar EventListeners
+      window.removeEventListener("scroll", context.sharedState.portfolio.NavBar.IntervalEvent);
+      context.sharedState.portfolio.NavBar.IntervalEvent = null;
+      context.sharedState.portfolio.NavBar.scrolling = null;
+      context.sharedState.portfolio.NavBar.scrollSizeY = null;
+    }
   }, [context.sharedState]);
 
   // console.log("rounded Count : ", roundCounter);
@@ -142,9 +142,8 @@ export default function Home() {
 
   return (
     <div
-      className={` bg-AAprimary min-h-screen  w-full flex flex-col justify-center items-center ${
-        isFinished ? "pt-48" : ""
-      }`}
+      className={` bg-AAprimary min-h-screen  w-full flex flex-col justify-center items-center ${isFinished ? "pt-48" : ""
+        }`}
     >
       {!isFinished && !(myText[1].length == 0) && (
         <>
@@ -176,7 +175,7 @@ export default function Home() {
                   updateStatistics={updateStatistics}
                 />
               </div>}
-              
+
               <div
                 className="lg:text-3xl md:text-xl sm:text-xl hover:cursor-pointer flex flex-wrap px-2 "
                 onClick={() => inputRef.current.focus()}
@@ -235,9 +234,9 @@ export default function Home() {
 
                   className="w-0 h-0 bg-AAprimary text-xl text-center text-gray-600  border-b-gray-600
                   py-2 px-4 focus:outline-none "
-                  
+
                   onChange={e => {
-                    if(isStartedTyping==false){
+                    if (isStartedTyping == false) {
                       seIsStartedTyping(true);
                     }
                     handleOnChangeInput(
