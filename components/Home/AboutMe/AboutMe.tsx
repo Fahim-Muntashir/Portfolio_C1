@@ -37,8 +37,8 @@ export default function AboutMe(props) {
             </div>
             <div className="font-Header ">
               <span className="text-gray-400 ">
-                Since pursuing my engineering degree, my career has taken me through diverse industries, allowing me to
-                refine my expertise in desktop and web development. In the realm of{" "}
+                Since pursuing a Complete Webdevelopment Course On Programming Hero, my career has taken me through diverse industries, allowing me to
+                refine my expertise in  web development. In the realm of{" "}
                 <span className="text-AAsecondary">web3</span>, I am dedicated to pushing boundaries and driving
                 advancements. With experience working alongside esteemed organizations like{" "}
                 <span className="text-AAsecondary">CEMRD</span>, where I played a key role in releasing v2 of{" "}
