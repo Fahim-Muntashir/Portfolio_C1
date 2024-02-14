@@ -69,8 +69,10 @@ export default function Home() {
 
   console.log("website is rendering...");
   const meta = {
-    title: "Abdellatif Anaflous - Software Engineer",
-    description: `I've been working on Software development for 5 years straight. Get in touch with me to know more.`,
+    title: "Fahim Muntashir- Software Engineer",
+    description: `Welcome to the portfolio of Fahim Muntashir - a highly skilled and dedicated MERN stack web developer with over three years of hands-on experience. Specializing in the creation of large-scale projects, I am adept at solving complex problems with innovative solutions that surpass expectations. My hard-working approach and creative skills ensure the successful development of your next project. Explore my portfolio for a glimpse into my impressive track record. Let's collaborate to achieve your website's full potential."
+
+    When writing SEO descriptions, it's important to include relevant keywords that people are likely to search for. In this case, I incorporated terms like "MERN stack web developer," "large-scale projects," and "creative skills." You should also incorporate your name, Fahim Muntashir, as well as any other key terms or phrases that are specific to your expertise or the services you offer. Remember to keep it concise and to the point!`,
     image: "/titofCercle.png",
     type: "website",
   };
@@ -82,8 +84,8 @@ export default function Home() {
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
-        <meta property="og:url" content={`https://anaflous.com`} />
-        <link rel="canonical" href={`https://anaflous.com`} />
+        <meta property="og:url" content={`https://fahimmuntashir.net`} />
+        <link rel="canonical" href={`https://fahimmuntashir.net`} />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Manu Arora" />
         <meta property="og:description" content={meta.description} />
