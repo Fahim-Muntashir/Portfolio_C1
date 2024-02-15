@@ -3,8 +3,8 @@ import Img from "../../../components/smallComp/image/Img";
 import ArrowIcon from "../../../components/Icons/ArrowIcon";
 export default function AboutMe(props) {
   const technologies = [
-    ["Next.js", "JavaScript (ES6+)", "Tailwind CSS", "Express Js", "Moongose", "MongoDB"],
-    ["Node.js", "TypeScript", "Framer Motion", "react-moralis", "Redux", 'Elementor'],
+    ["Next.js", "Redux", "JavaScript (ES6+)", "Tailwind CSS", "Express Js", "Moongose", "MongoDB"],
+    ["Node.js", "TypeScript", "Framer Motion", "react-moralis", 'Elementor', 'webflow', 'figma', 'ui/ux'],
   ];
   return (
     <div id="aboutSection" data-aos="fade-up" className="snap-start flex flex-col  items-center py-20 bg-AAprimary">
@@ -30,20 +30,16 @@ export default function AboutMe(props) {
             <div className="font-Header ">
               <span className="text-gray-400 ">
                 Hello! My name is Fahim Muntashir, and I am a passionate software engineer and problem solver, dedicated to
-                creating impactful codes that thrive on the internet. My journey in computer science began in 2020 when
-                The Covid Time. Little did I know that programming skills
-                would become essential in pursuing this interest, marking the start of my programming journey.
+                creating impactful codes that thrive on the internet.
+                In the midst of the <span className="text-AAsecondary">COVID-19 pandemic in 2020</span> , I stumbled upon a web development class by <span className="text-AAsecondary">Jhankar Mahbub</span> sparking a passion that would change my life. Fascinated by the intricacies of web development, I delved deep into online research, tirelessly tackling problems and honing my skills. This intense journey led me to enroll in a MERN stack course by <span className="text-AAsecondary">Programming Hero,</span>  where I gained confidence in real-world projects.
               </span>
             </div>
             <div className="font-Header ">
               <span className="text-gray-400 ">
-                Since pursuing a Complete Webdevelopment Course On Programming Hero, my career has taken me through diverse industries, allowing me to
-                refine my expertise in  web development. In the realm of{" "}
-                <span className="text-AAsecondary">web3</span>, I am dedicated to pushing boundaries and driving
-                advancements. With experience working alongside esteemed organizations like{" "}
-                <span className="text-AAsecondary">CEMRD</span>, where I played a key role in releasing v2 of{" "}
-                <span className="text-AAsecondary">ENS Vision Marketplace</span> , my passion for web3 and continuous
-                learning drives me to make a positive impact and advance technology.
+                Determined to test my skills, I ventured into <span className="text-AAsecondary">freelancing</span>. The challenges were daunting, but with perseverance, my solo operation blossomed into an agency. Seeking to make an impact, I collaborated with esteemed organizations like <span className="text-AAsecondary">CEMRD</span> , furthering my professional growth and fulfillment.
+                <br />
+                <br />
+                In the end, this journey has been a testament to the power of determination and passion, fueled by the initial inspiration from Jhankar Mahbub. From sleepless nights to flourishing projects, my evolution in web development has been a rewarding experience that has taught me the value of perseverance and the belief that anything is achievable with hard work and dedication.
               </span>
             </div>
             {/* <div className="font-Header tracking-wide">
@@ -95,11 +91,11 @@ export default function AboutMe(props) {
           <div className="group relative lg:w-96 lg:h-96 md:w-72 md:h-72 md:block hidden ">
             <div
               className="group-hover:translate-x-3 group-hover:translate-y-3
-               duration-300 absolute w-5/6 h-5/6 border-2 border-AAsecondary translate-x-5 
+               duration-300 absolute w-5/6 h-full border-2 border-AAsecondary translate-x-5 
                translate-y-5 rounded"
             ></div>
 
-            <div className="absolute w-5/6 h-5/6  rounded overflow-hidden">
+            <div className="absolute w-5/6 h-[96%] rounded overflow-hidden">
               <div className="absolute w-full h-full group-hover:opacity-0 bg-AAsecondary opacity-10 duration-300 rounded overflow-hidden"></div>
               <Img
                 src={"/img/Portfolio-portrait-3.jpg"}

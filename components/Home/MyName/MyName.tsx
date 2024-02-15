@@ -57,9 +57,9 @@ export default function MyName(props: { finishedLoading: boolean }) {
         digital experiences. My current area of focus is in the <span className="text-AAsecondary">
           Ai Uses In Webdevelopment</span>,
         where I actively engage in developing <br className="2xl:block hidden" />
-        and designing immersive <span className="text-AAsecondary">web3 applications</span>. This involves working with{" "}
-        <span className="text-AAsecondary">Smart Contracts</span>  on the{" "}
-        <span className="text-AAsecondary">Blockchain</span>.
+        and designing immersive <span className="text-AAsecondary">web applications</span>. I leverage smart contracts
+        <span className="text-AAsecondary">Smart Contracts</span>  on {" "}
+        <span className="text-AAsecondary">JAVASCRIPT </span>to push the boundaries of what&apos;s possible.
         {/* <br className="2xl:block hidden" />creating and deploying them, as well as implementing the
         front-end components to enable seamless user interactions. */}
       </motion.h3>
