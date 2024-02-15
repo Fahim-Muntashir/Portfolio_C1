@@ -5,16 +5,16 @@ import { getTasksTextWithHighlightedKeyword } from "./taskAndType";
 export default function AcuaZone() {
   const tasks = [
     {
-      text: "Designed and Built a Desktop app for IdealFresh that manage billings, client circumstances using Apache POI with Microsoft Office Excel.",
-      keywords: ["Apache POI"],
+      text: "Recently, we embarked on an ambitious journey with AquaZone, aiming to revolutionize the aquarium industry.Our innovative vision extends beyond traditional fish trading, bringing a new era of plant- fused expansion.This endeavor is the culmination of our combined creativity and technical expertise.",
+      keywords: ["AquaZone", "plant- fused"],
     },
     {
-      text: "Creating customized scripts for pulling, managing and refactoring files from Clouds.",
-      keywords: ["scripts"],
+      text: "In this exciting venture, our creative programmers and I have joined forces to transform our vision into a tangible reality. Utilizing our extensive knowledge in aquarium management and cutting-edge technology, we're working towards a platform that redefines aquatic hobbyists' experiences.",
+      keywords: ["aquarium management"],
     },
     {
-      text: "Daily communications and interactions with a non-developers to solve their problems by providing technological solutions and expertise.",
-      keywords: ["non-developers"],
+      text: "Our strategic approach involves meticulous planning and execution. We're integrating advanced algorithms and user-friendly interfaces, ensuring AquaZone becomes the go-to destination for both aquarium enthusiasts and industry professionals.",
+      keywords: ["advanced algorithms"],
     },
   ];
   return (
@@ -23,10 +23,10 @@ export default function AcuaZone() {
         <div className="flex flex-col spacey-y-2">
           {/* Title */}
           <span className="text-gray-100 sm:text-lg text-sm font-Arimo tracking-wide">
-            Software Developer <span className="text-AAsecondary">@ JavaFX</span>
+            Software Developer <span className="text-AAsecondary">@ AcuaZone</span>
           </span>
           {/* Date */}
-          <span className="font-mono text-xs text-gray-500">June - August 2021</span>
+          <span className="font-mono text-xs text-gray-500">January -  2023</span>
         </div>
         <div className="flex flex-col space-y-4 sm:text-sm text-xs">
           {/* Tasks Description 1 */}

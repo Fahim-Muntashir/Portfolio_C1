@@ -4,16 +4,16 @@ import { getTasksTextWithHighlightedKeyword } from "./taskAndType";
 export default function Freelancing() {
     const tasks = [
         {
-            text: "Leading the development of the NFT Marketplace v2 for the Platform FeverTokens.",
-            keywords: ["NFT Marketplace v2"],
+            text: "As a creative freelancer, I bring a unique blend of MERN Stack development skills to my part-time work.",
+            keywords: ["work", "MERN"],
         },
         {
-            text: "Worked with a team of six developers to build a temporary NFT Marketplace platform for VivaTech2022 event, an ambitious startup originating from France,Paris.",
-            keywords: ["VivaTech2022 event"],
+            text: "My efficient and adaptable approach enables me to take on competitive projects, delivering exceptional results and creating meaningful impact for clients.",
+            keywords: ["adaptable", "results"],
         },
         {
-            text: "Interacted with the blockchain & Smart Contracts to build the new FeverTokens Platform.",
-            keywords: ["blockchain & Smart Contracts"],
+            text: "           With my MERN Stack proficiency, I create seamless, high- functioning digital solutions that drive success for clients and projects.",
+            keywords: ["MERN Stack "],
         },
     ];
     return (
@@ -22,17 +22,19 @@ export default function Freelancing() {
                 <div className="flex flex-col spacey-y-2">
                     {/* Title */}
                     <span className="text-gray-100 sm:text-lg text-sm font-Arimo tracking-wide">
-                        Software Engineer <span className="text-AAsecondary">@ web3</span>
+                        A  <span className="text-AAsecondary">Creative
+                        </span> Freelancer
                     </span>
                     {/* Date */}
-                    <span className="font-mono text-xs text-gray-500">Mars - August 2022</span>
+
                     <span
                         className="font-mono text-xs text-AAsecondary hover:cursor-pointer"
                         // set text size on style attribute
                         style={{ fontSize: "0.6rem" }}
                         onClick={() => window.open("https:///www.fevertokens.io", "_blank")}
                     >
-                        www.fevertokens.io
+
+
                     </span>
                 </div>
                 <div className="flex flex-col space-y-4 sm:text-sm text-xs">
