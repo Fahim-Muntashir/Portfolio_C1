@@ -1,13 +1,14 @@
 import React from "react";
 import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
 import ArrowIcon from "../../Icons/ArrowIcon";
-import IdealFresh from "./Descriptions/IdealFresh";
+import IdealFresh from "./Descriptions/AcuaZone";
 import AdvancedAgroManagement from "./Descriptions/AdvancedAgroManagement";
 import Fantasia from "./Descriptions/Fantasia";
 import SuperBerry from "./Descriptions/SuperBerry";
 import Cemrd from "./Descriptions/Cemrd";
 import MassiveGrowth from "./Descriptions/MassiveGrowth";
 import Freelancing from "./Descriptions/Freelancing";
+import AcuaZone from "./Descriptions/AcuaZone";
 export default function WhereIHaveWorked() {
   const barRef = React.useRef<HTMLDivElement>(null);
   // ? INFORMATIONAL control the green position using px,
@@ -20,10 +21,9 @@ export default function WhereIHaveWorked() {
         return <MassiveGrowth />;
       case "Freelancing":
         return <Freelancing />;
-      case "IdealFresh":
-        return <IdealFresh />;
-      case "Advanced Agro Management":
-        return <AdvancedAgroManagement />;
+      case "AcuaZone":
+        return <AcuaZone />;
+
     }
   };
   const [DescriptionJob, setDescriptionJob] = React.useState("MassiveGrowth");
@@ -137,10 +137,10 @@ const CompaniesBar = props => {
           />
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={3}
-            CompanyName="IdealFresh"
+            CompanyName="AcuaZone"
             BarPosition={188}
             BarAvobePosition={385}
-            DescriptionJob="IdealFresh"
+            DescriptionJob="AcuaZone"
             CompanyNameBackgroundColorGreen={[false, false, false, true]}
             setDescriptionJob={props.setDescriptionJob}
           />

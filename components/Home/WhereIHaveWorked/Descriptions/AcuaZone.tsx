@@ -2,7 +2,7 @@ import React from "react";
 import ArrowIcon from "../../../Icons/ArrowIcon";
 import { getTasksTextWithHighlightedKeyword } from "./taskAndType";
 
-export default function IdealFresh() {
+export default function AcuaZone() {
   const tasks = [
     {
       text: "Designed and Built a Desktop app for IdealFresh that manage billings, client circumstances using Apache POI with Microsoft Office Excel.",
@@ -29,8 +29,8 @@ export default function IdealFresh() {
           <span className="font-mono text-xs text-gray-500">June - August 2021</span>
         </div>
         <div className="flex flex-col space-y-4 sm:text-sm text-xs">
-            {/* Tasks Description 1 */}
-            {tasks.map((item, index) => {
+          {/* Tasks Description 1 */}
+          {tasks.map((item, index) => {
             return (
               <div key={index} className="flex flex-row space-x-2">
                 <ArrowIcon className={"h-5 w-4 text-AAsecondary flex-none"} />
