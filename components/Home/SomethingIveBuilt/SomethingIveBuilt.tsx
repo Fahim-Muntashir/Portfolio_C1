@@ -83,6 +83,9 @@ export default function SomethingIveBuilt() {
                 <p className="text-gray-300 md:text-gray-400 text-left md:text-right ">
 
                   At CeMRD, my three years of <span className="text-AAsecondary"> full-stack web development</span> experience and proficiency in JavaScript, React JS,<span className="text-AAsecondary"> Next JS, Express JS, Mongoose, </span>Tailwind CSS, Node JS, and TypeScript were key to my success. The dynamic environment nurtured my passion for <span className="text-AAsecondary"> innovation </span> , leading to significant contributions to our multidisciplinary research endeavors.
+
+
+
                 </p>
               </div>
               <ul
@@ -95,10 +98,19 @@ export default function SomethingIveBuilt() {
                 <span className="pr-4 z-10">Moongose</span>
                 <span className="pr-4 z-10">Express JS</span>
               </ul>
-              <div className="z-10 flex fle-row space-x-5 ">
-                <a href="https://www.cemrd.org" target={"_blank"} rel="noreferrer">
-                  <ExternalLink url={""} router={router} />
-                </a>
+              <div className="flex space-x-7">
+                <div className="z-10 flex text-white fle-row space-x-5 ">
+                  Client=
+                  <GithubIcon link="https://github.com/Fahim-Muntashir/CeMRD_Client_Demo" />
+
+                </div>
+                <div className="z-10 text-white flex fle-row space-x-5 ">
+                  Server=<GithubIcon link="https://github.com/Fahim-Muntashir/CeMRD_Server_Demo" />
+
+                  <a href="https://cemrd-demo.netlify.app" target={"_blank"} rel="noreferrer">
+                    <ExternalLink url={""} router={router} />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -162,12 +174,14 @@ export default function SomethingIveBuilt() {
                 <span className="pr-4 z-10">Firebase</span>
               </ul>
               <div className="flex space-x-7">
-                <div className="z-10 flex fle-row space-x-5 ">
+                <div className="z-10 flex text-white fle-row space-x-5 ">
+                  Client=
                   <GithubIcon link="https://github.com/FahimMuntashir1/Toy-Corner" />
 
                 </div>
-                <div className="z-10 flex fle-row space-x-5 ">
-                  <GithubIcon link="https://github.com/FahimMuntashir1/toy-corner-server-code" />
+                <div className="z-10 text-white flex fle-row space-x-5 ">
+                  Server=<GithubIcon link="https://github.com/FahimMuntashir1/toy-corner-server-code" />
+
                   <a href="https://toyconer.netlify.app/" target={"_blank"} rel="noreferrer">
                     <ExternalLink url={""} router={router} />
                   </a>
